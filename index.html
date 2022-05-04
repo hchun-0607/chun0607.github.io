@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal webpage</title>
+    <link rel="icon" href="logo_icon.ico" type="image/x-icon"/>
+    <style type="text/css">
+        body{
+            background-color: lightsteelblue;
+        }
+        A:hover { color :deeppink}
+    </style>
+</head>
+<body>
+    <center><h1>Hao-Chun Fu</h1>
+    <span id="Datetime"></span>
+    <script>
+        var intervalid = window.setInterval(function time(){
+            var dt = new Date();
+            document.getElementById("Datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"-"+(("0"+(dt.getDate()+1)).slice(-2))
+            +"-"+(dt.getFullYear())+" "+("0"+dt.getHours()).slice(-2)+":"+("0"+dt.getMinutes()).slice(-2)+":"+("0"+dt.getSeconds()).slice(-2)
+        },1000
+        );
+    </script>
+    </center>
+    <ul>
+    <img src="photo.jpg" width = "20%" style="float: left; margin: 20px;" >
+    <font size="4">
+        <li>About me <br></li>
+        <hr>
+        My name is 傅皓群. Born in Hsinchu where winds always roaring.My birthday is 6/7 and I am a gemini.I graduated from National Hsinchu Senior High School.
+        <a href="https://www.hchs.hc.edu.tw/home">My alma mater</a>
+        I am currently a freshman in National Taiwan University and major in <a href="https://web.ee.ntu.edu.tw/">electrical engineering</a>.
+        <br><br>
+        I have several hobbies,one of which is watching f1.I started to watch f1 since 16.My favorite team is <a href="https://www.mclaren.com/racing/">Mclaren</a>.
+        Another hobby of me is playing  
+        <a href="https://zh.wikipedia.org/zh-tw/%E7%BD%91%E7%90%83">tennis</a>.
+        Also I love reading.My favorite novel is <a href="https://www.books.com.tw/products/0010268505">A Tale of Two Cities</a>.
+        <br><br>
+        <audio src="song.mp3" autoplay loop></audio>
+    </font>
+     
+</ul>
+
+</body>
+</html>
